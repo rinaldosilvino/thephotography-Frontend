@@ -1,0 +1,107 @@
+.title {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  color: #000000;
+}
+.titleOne {
+  font-size: 54px;
+}
+.titleTwo {
+  font-size: 42px;
+}
+.titleThree {
+  font-size: 28px;
+}
+.titleFour {
+  font-size: 22px;
+}
+
+@media (max-width: 1000px){
+  .titleOne {
+    font-size: 44px;
+  }
+  .titleTwo {
+    font-size: 36px;
+  }
+  .titleThree {
+    font-size: 24px;
+  }
+  .titleFour {
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px){
+  .titleOne {
+    font-size: 36px;
+  }
+  .titleTwo {
+    font-size: 28px;
+  }
+  .titleThree {
+    font-size: 20px;
+  }
+  .titleFour {
+    font-size: 18px;
+  }
+}
+
+.label {
+  font-family: "Lora", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.paragraph {
+  font-family: "lato", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.titleItalic,
+.paragraphItalic,
+.labelItalic {
+  font-style: italic;
+}
+
+.titleCenter,
+.paragraphCenter,
+.labelCenter {
+  text-align: center;
+}
+.signUpTitle,
+.sighUpParagraph,
+.signUpLabel {
+  color: #fff;
+}
+
+.contentBox{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contentBox p,
+.contentBox li{
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.contentBox b{
+  font-weight: 600;
+}
+.contentBox i{
+  font-style: italic;
+}
+.contentBox ul,
+.contentBox ol{
+  padding-left: 25px;
+}
+.contentBox ul,
+.contentBox ul li{
+  list-style: circle;
+}
+.contentBox ol,
+.contentBox ol li{
+  list-style: decimal;
+}
+

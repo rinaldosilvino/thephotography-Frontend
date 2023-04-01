@@ -1,0 +1,33 @@
+.button {
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+
+  padding: 0 25px;
+  height: 52px;
+
+  background: transparent;
+  border: 2px solid #000000;
+
+  transition: 0.5s;
+}
+
+.button.big {
+  padding: 0 35px;
+  height: 58px;
+}
+.buttton.signUp {
+  color: #fff;
+  border-color: #fff;
+}
+.button:hover {
+  background: #000000;
+  color: #fff;
+}

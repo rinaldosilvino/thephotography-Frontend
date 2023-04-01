@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/pages/index.css" />
+
+    <title>The photography</title>
+  </head>
+  <style>
+    .dynamicContent .flexGrid{
+      display: flex;
+      gap: 4rem;
+      align-items: center;
+    }
+    .dynamicContent .flexGrid .left,
+    .dynamicContent .flexGrid .right{
+      width: 100%;
+    }
+    @media (max-width:700px) {
+      .dynamicContent .flexGrid{
+        flex-direction: column;
+      }
+      .dynamicContent .reverse .flexGrid{
+        flex-direction: column-reverse;
+      }
+      .dynamicContent .imageGrid{
+        display: flex;
+        justify-content: center;
+      }
+    }
+    @media(max-width:425px){
+      .dynamicContent .flexGrid .contentGrid .button{
+        width: 100%;
+      }
+    }
+  </style>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="flexGrid">
+          <a>
+            <img src="/assets/Photologo.svg" alt="Logo The Photography" />
+          </a>
+          <nav class="menu">
+            <ul>
+              <li>
+                <a>ABOUT</a>
+              </li>
+              <li>
+                <a>PORTFOLIO</a>
+              </li>
+            </ul>
+            <button class="button">Contact us</button>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section id="mainBanner" class="dynamicContent reverse">
+      <div class="container">
+        <div class="flexGrid">
+          <div class="left contentGrid">
+            <label class="label">Photo website</label>
+            <h1 class="titleOne marginBotton1">The Photography</h1>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              ut velit ut leo placerat vehicula in quis nisi. Curabitur quis
+              efficitur mauris. Donec non eros molestie, ultrices nulla
+              suscipit, pharetra diam.
+            </p>
+            <div class="marginTop4">
+              <a class="button big">Read more</a>
+            </div>
+          </div>
+          <div class="right imageGrid">
+            <img src="/assets/photography1.svg" alt="Photography Blue Eye" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="basicContent sectionPadding">
+      <div class="container">
+        <div class="flexGrid">
+          <div class="left">
+            <h2 class="titleTwo">I love photography</h2>
+          </div>
+          <div class="right">
+            <div class="contentBox">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus ut velit ut leo placerat vehicula in quis nisi.
+                Curabitur quis efficitur mauris. Donec non eros molestie,
+                ultrices nulla suscipit, pharetra diam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <img
+          src="./assets/Mosaic.png"
+          alt="Conjunto de imagens"
+          class="marginBotton4"
+        />
+      </div>
+    </section>
+    <section id="about" class="dynamicContent sectionPadding">
+      <div class="container">
+        <div class="flexGrid">
+          <div class="left imageGrid">
+            <img src="./assets/Josefine.svg" alt="Josefine fotografando" />
+          </div>
+          <div class="right contentGrid">
+            <h2 class="titleTwo marginBotton1">My name is Josefine Silva</h2>
+            <div class="contentBox">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus ut velit ut leo placerat vehicula in quis nisi.
+                Curabitur quis efficitur mauris.
+              </p>
+              <ul>
+                <li>Donec non eros molestie, ultrices nulla suscipit, pharetra diam. </li>
+                <li>Donec non eros molestie, ultrices nulla suscipit, pharetra diam. </li>
+              </ul>
+              <div class="marginTop4">
+                <a class="button big">Contact us</a>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
